@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>The Little Studio</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/reservation.css">
+    <link rel="icon" type="image/png" href="image/icons/logo.png"/>
+
+        <link href="http://fonts.googleapis.com/earlyaccess/nanumpenscript.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="menuBar">
+        <div class="menu">
+          <a class="active" href="main.html"><img src="./image/tree.png" id="treelogo"><div id="logotext">The<br>Little<br>Studio</div></a>
+        </div>
+        <div class="menu">
+          <a href="discription.html">작은나무 스튜디오</a>
+        </div>
+        <div class="menu">
+          <a href="product.html">상품</a>
+        </div>
+        <div class="menu">
+          <a href="reservation.html">예약</a>
+        </div>
+        <div class="menu">
+          <a href="location.html">위치</a>
+        </div>
+        <div class="menu">
+          <a href="question.html">문의</a>
+        </div>
+      </div>
+      <div class="login">
+        <p><a href="login.html">로그인</a>&nbsp&nbsp&nbsp<a href="signup.html">회원가입</a><br><br><br></p>
+      </div>
+      <div class="logout">
+        <span class="loginUserName"></span><a href="main.html" id="logout">로그아웃</a>&nbsp&nbsp&nbsp<a href="signup.html">회원가입</a><br><br><br></a>
+      </div>
+    </header>
+    <section id="calendarArea">
+      <div id="myModal" class="addScheduleModal">
+    <!-- Modal content -->
+      <div class="addScheduleModal-content"  style="text-align:center">
+        <span><span id="day"></span>일 예약하기</span><br><br>
+        예약현황
+        <div class="" style="border:1px solid black">
+        <ul id="currentReservation">
+
+        </ul>
+      </div>
+      <br>
+        예약 시간
+        <select id="time" name="">
+
+        </select> <br>
+        <input type="text" name="text" value="" placeholder="성함을 입력해주세요." id="text"><br>
+        <span>
+          <button type="button" name="button" id="addbtn" style="margin-left:20px">Add</button>
+          <button type="button" name="button" id="cancelbtn" style="margin-right:20px;">Cancel</button>
+        </span>
+      </div>
+    </div>
+    <!-- 예약 테이블 -->
+      <table id="calendar">
+        <thead>
+          <tr>
+            <th colspan="7" id="date">
+              <span id="year"></span>년
+              <span id="month"></span>월
+            </th>
+          </tr>
+          <tr>
+            <th style="color:red">일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th style="color:blue;">토</th>
+          </tr>
+        </thead>
+
+        <tbody id="body" >
+        <tr>
+          <td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td>
+        </tr>
+        <tr>
+          <td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td>
+        </tr>
+        <tr>
+          <td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td>
+        </tr>
+        <tr>
+          <td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td>
+        </tr>
+        <tr>
+          <td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td>
+        </tr>
+        <tr>
+          <td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td><td ondblclick="double(this);"></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer class="foot">
+      <div class="">
+        <a href="discription.html">작은 나무 스튜디오</a>
+      </div>
+      <div class="">
+        <a href="location.html">인천광역시 서구 원당대로 581 롯데마트 검단점 2층</a>
+      </div>
+      <div class="">
+        전화번호 032.567.9850
+      </div>
+      <div class="">
+        계좌 하나 746-910119-18007
+      </div>
+    </footer>
+    <script src="./js/reservation.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+h1, h2, h3, h4, h5, h6 {
+  text-transform: capitalize;
+}
+#signupimg{
+  border: 1px solid black;
+  width: 150px;
+  height: 200px;
+  display: inline-block;
+}
+#img{
+  width: 150px;
+  height: 200px;
+}

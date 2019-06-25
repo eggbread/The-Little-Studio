@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" manifest="clock.appcache">
+  <head>
+    <meta charset="utf-8">
+    <link href="http://fonts.googleapis.com/earlyaccess/nanumpenscript.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>The Little Studio</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" type="image/png" href="image/icons/logo.png"/>
+
+  </head>
+  <body>
+    <!-- 메뉴바를 구성한다 -->
+    <header>
+      <div class="menuBar">
+        <div class="menu">
+          <a class="active" href="main.html"><img src="./image/tree.png" id="treelogo"><div id="logotext">The<br>Little<br>Studio</div></a>
+        </div>
+        <div class="menu">
+          <a href="discription.html">작은나무 스튜디오</a>
+        </div>
+        <div class="menu">
+          <a href="product.html">상품</a>
+        </div>
+        <div class="menu">
+          <a href="reservation.html">예약</a>
+        </div>
+        <div class="menu">
+          <a href="location.html">위치</a>
+        </div>
+        <div class="menu">
+          <a href="question.html">문의</a>
+        </div>
+      </div>
+      <div class="login">
+        <a href="login.html">로그인</a>&nbsp&nbsp&nbsp<a href="signup.html">회원가입</a><br><br><br></a>
+      </div>
+      <div class="logout">
+        <span class="loginUserName"></span><a href="main.html" id="logout">로그아웃</a>&nbsp&nbsp&nbsp<a href="signup.html">회원가입</a><br><br><br></a>
+      </div>
+    </header>
+
+    <section id="slideShow">
+      <div class="slide" >
+        <!-- 이미지를 추가할 때마다 radio를 생성 -->
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="icon">
+        <!-- 클릭하면 product.html에 있는 상품설명란으로 이동 -->
+        <div class="family">
+          <a href="product.html#familysection" class="iconText">가족사진</a>
+        </div>
+        <div class="baby">
+          <a href="product.html#babysection" class="iconText">베이비사진</a>
+        </div>
+        <div class="prove">
+          <a href="product.html#provesection" class="iconText">증명,프로필사진</a>
+        </div>
+        <div class="profile">
+          <a href="product.html#profilesection" class="iconText">우정사진</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 하단에 배치되는 사진관 정보 -->
+    <footer class="foot">
+      <div class="">
+        <a href="discription.html">작은 나무 스튜디오</a>
+      </div>
+      <div class="">
+        <a href="location.html">인천광역시 서구 원당대로 581 롯데마트 검단점 2층</a>
+      </div>
+      <div class="">
+        전화번호 032.567.9850
+      </div>
+      <div class="">
+        계좌 하나 746-910119-18007
+      </div>
+      <p>현재 시각 : <output id="clock"></output></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

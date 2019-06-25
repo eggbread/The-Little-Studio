@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>The Little Studio</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/location.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <link href="http://fonts.googleapis.com/earlyaccess/nanumpenscript.css" rel="stylesheet">
+  </head>
+  <body onload="initialize()">
+    <header>
+      <div class="menuBar">
+        <div class="menu">
+          <a class="active" href="main.html"><img src="./image/tree.png" id="treelogo"><div id="logotext">The<br>Little<br>Studio</div></a>
+        </div>
+        <div class="menu">
+          <a href="discription.html">작은나무 스튜디오</a>
+        </div>
+        <div class="menu">
+          <a href="product.html">상품</a>
+        </div>
+        <div class="menu">
+          <a href="reservation.html">예약</a>
+        </div>
+        <div class="menu">
+          <a href="location.html">위치</a>
+        </div>
+        <div class="menu">
+          <a href="question.html">문의</a>
+        </div>
+      </div>
+      <div class="login">
+        <p><a href="login.html">로그인</a>&nbsp&nbsp&nbsp<a href="signup.html">회원가입</a><br><br><br></p>
+      </div>
+      <div class="logout">
+        <span class="loginUserName"></span><a href="main.html" id="logout">로그아웃</a>&nbsp&nbsp&nbsp<a href="signup.html">회원가입</a><br><br><br></a>
+      </div>
+    </header>
+
+    <section style="text-align: -webkit-center;">
+      <!-- <div id="map_canvas"style="width:1000px; height:600px;"></div> -->
+      <div id="map" style="width:1000px; height:600px;"></div>
+      <script>
+
+
+  // To add the marker to the map, call setMap();
+        function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 37.594433, lng: 126.664598},
+            zoom: 17
+          });
+          var marker = new google.maps.Marker({
+            position: {lat: 37.594433, lng: 126.664598},
+            map:map,
+            title:"Hello World!"
+          });
+        }
+      </script>
+    
+    </section>
+
+    <footer class="foot">
+      <div class="">
+        <a href="discription.html">작은 나무 스튜디오</a>
+      </div>
+      <div class="">
+        <a href="location.html">인천광역시 서구 원당대로 581 롯데마트 검단점 2층</a>
+      </div>
+      <div class="">
+        전화번호 032.567.9850
+      </div>
+      <div class="">
+        계좌 하나 746-910119-18007
+      </div>
+    </footer>
+    <script src="./js/location.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx2FstnWvBE6lIZ6hOuhd6FQVZzkya4Iw&callback=initMap"
+    async defer></script>
+  </body>
+</html>

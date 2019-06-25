@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>The Little Studio</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/question.css">
+    <link rel="icon" type="image/png" href="image/icons/logo.png"/>
+
+    <meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link href="http://fonts.googleapis.com/earlyaccess/nanumpenscript.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="menuBar">
+        <div class="menu">
+          <a class="active" href="main.html"><img src="./image/tree.png" id="treelogo"><div id="logotext">The<br>Little<br>Studio</div></a>
+        </div>
+        <div class="menu">
+          <a href="discription.html">작은나무 스튜디오</a>
+        </div>
+        <div class="menu">
+          <a href="product.html">상품</a>
+        </div>
+        <div class="menu">
+          <a href="reservation.html">예약</a>
+        </div>
+        <div class="menu">
+          <a href="location.html">위치</a>
+        </div>
+        <div class="menu">
+          <a href="question.html">문의</a>
+        </div>
+      </div>
+      <div class="login">
+        <p><a href="login.html">로그인</a>&nbsp&nbsp&nbsp<a href="signup.html">회원가입</a><br><br><br></p>
+      </div>
+      <div class="logout">
+        <span class="loginUserName"></span><a href="main.html" id="logout">로그아웃</a>&nbsp&nbsp&nbsp<a href="signup.html">회원가입</a><br><br><br></a>
+      </div>
+    </header>
+    <section>
+      <table>
+        <thead>
+          <th>번호</th><th>제목</th><th>작성자</th><th>날짜</th>
+        </thead>
+        <tbody id="postTable">
+
+        </tbody>
+      </table>
+      <br>
+      <button type="button" id="write" name="button">작성하기</button> <br>
+    </section>
+    <section>
+      <span>
+        <br>
+      <div id="plusfriend-addfriend-button" style="display:inline-block;"></div>
+        <script type='text/javascript'>
+          //<![CDATA[
+            // 사용할 앱의 JavaScript 키를 설정해 주세요.
+            Kakao.init('21695924008b0587ab8518d7e6f1e73b');
+            // 플러스친구 친구추가 버튼을 생성합니다.
+            Kakao.PlusFriend.createAddFriendButton({
+              container: '#plusfriend-addfriend-button',
+              plusFriendId: '_AmFzj', // 플러스친구 홈 URL에 명시된 id로 설정합니다.
+              size: 'small',
+      color: 'black',
+      shape: 'round',
+      supportMultipleDensities: true
+            });
+          //]]>
+        </script>
+
+        <div id="plusfriend-chat-button" style="display:inline-block;height:30px;"></div>
+          <script type='text/javascript'>
+            //<![CDATA[
+              // 사용할 앱의 JavaScript 키를 설정해 주세요.
+              //Kakao.init('21695924008b0587ab8518d7e6f1e73b');
+              // 플러스친구 1:1채팅 버튼을 생성합니다.
+              Kakao.PlusFriend.createChatButton({
+                container: '#plusfriend-chat-button',
+                plusFriendId: '_AmFzj', // 플러스친구 홈 URL에 명시된 id로 설정합니다.
+                title: 'question',
+                size: 'small',
+                color: 'mono',
+                shape: 'pc',
+                supportMultipleDensities: true
+              });
+            //]]>
+          </script>
+          </span>
+    </section>
+
+    <footer class="foot">
+      <div class="">
+        <a href="discription.html">작은 나무 스튜디오</a>
+      </div>
+      <div class="">
+        <a href="location.html">인천광역시 서구 원당대로 581 롯데마트 검단점 2층</a>
+      </div>
+      <div class="">
+        전화번호 032.567.9850
+      </div>
+      <div class="">
+        계좌 하나 746-910119-18007
+      </div>
+
+    </footer>
+    <script src="./js/question.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  </body>
+</html>
